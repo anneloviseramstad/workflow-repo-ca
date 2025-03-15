@@ -3,6 +3,7 @@ node_modules/
 
 *.json
 *.cache
+*.eslintcache
 
 # Playwright
 /test-results/
