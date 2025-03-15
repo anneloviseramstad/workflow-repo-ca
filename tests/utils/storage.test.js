@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { saveUser, getUsername, clearKey } from "./storage.js";
+import { saveUser, getUsername, clearKey } from "../../js/utils/storage.js";
 
 beforeEach(() => {
   globalThis.localStorage = {

@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { isActivePath } from "./userInterface.js";
+import { isActivePath } from "../../js/utils/userInterface.js";
 
 describe("isActivePath", () => {
   test("Returns true when current path matches href exactly", () => {
