@@ -29,7 +29,16 @@ npm install
 ```
 
 ### 3. Configure the Environment
-If your project requires any specific environment variables, create a .env file in the root directory and set the necessary variables (e.g., API keys, database credentials, etc.). Refer to the .env.example file for a template.
+Create a `.env` file in the root directory and add the required environment variables. You can use `.env.example` as a reference:  
+
+
+##### TEST_USER_EMAIL=**your-email@example.com**  
+##### TEST_USER_PASSWORD=**yourpassword**  
+
+🔹 **Important**:  
+- Replace `your-email@example.com` and `yourpassword` with actual credentials.  
+- Ensure that `.env` is included in `.gitignore` to keep sensitive information secure.  
+- Never commit your `.env` file to version control.  
 
 Important: Make sure to add .env to .gitignore to keep sensitive data secure.
 
