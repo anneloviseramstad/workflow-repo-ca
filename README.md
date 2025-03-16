@@ -1,6 +1,10 @@
 # Workflow Repo for the CA
 
-## Project Setup and Instructions
+## 🌍 About the Website  
+
+This website is a **venue booking platform** that allows users to discover, book, and manage venues for various events. It provides a seamless user experience with authentication, real-time data fetching, and responsive design.
+
+## 🚀 Project Setup and Instructions
 
 ### Prerequisites
 
@@ -18,31 +22,41 @@ Start by cloning the repository to your local machine:
 git clone https://github.com/anneloviseramstad/workflow-repo-ca/tree/workflow
 ```
 
-## 2. Install Dependencies
+### 2. Install Dependencies
 Install the required dependencies using npm:
+```
 npm install
+```
 
-## 3. Configure the Environment
+### 3. Configure the Environment
 If your project requires any specific environment variables, create a .env file in the root directory and set the necessary variables (e.g., API keys, database credentials, etc.). Refer to the .env.example file for a template.
 
 Important: Make sure to add .env to .gitignore to keep sensitive data secure.
 
-## 4. Running the Project
+### 4. Running the Project
+```
 npm start
+```
 
-## 5. Run Unit Tests (Vitest)
+### 5. Run Unit Tests (Vitest)
 To run the unit tests using Vitest, use the following command:
+```
 npm test
+```
 
-## 6. Run End-to-End Tests (Playwright)
+### 6. Run End-to-End Tests (Playwright)
 To run the Playwright end-to-end tests:
+```
 npx playwrught test
+```
 
 To view the report, run:
+```
 npx playwright show-report
+```
 
-## Playwright Test Cases
-### Login Tests:
+### Playwright Test Cases
+#### Login Tests:
 - User can successfully log in with valid credentials from environment variables.
 
 - If the login details from the lesson do not work, you can create a new user by running the project and using the registration form.
@@ -50,20 +64,24 @@ npx playwright show-report
 
 Note: Be sure to include .env in the .gitignore file and provide an .env.example for branch reference.
 
-### Navigation Tests:
+#### Navigation Tests:
 - Navigates to the home page.
 - Waits for the venue list to load.
 - Clicks the first venue.
 - Verifies that when the venue details page loads, the words "Venue details" appear in the heading.
 
-## 7. Run Eslint
+### 7. Run Eslint
 To lint your code with ESLint, use the following command:
+```
 npm run lint
+```
 This will check your code for any linting errors and ensure it follows the predefined style rules.
 
-## 8. Run Prettier
+### 8. Run Prettier
 To automatically format your code using Prettier, run:
+```
 npm run format
+```
 
-## 9. Commit Hooks with Husky and Lint-Staged
+### 9. Commit Hooks with Husky and Lint-Staged
 This project is set up with Husky and Lint-Staged to run linting and formatting checks on staged files before committing. These tools help maintain consistent code quality by automatically running ESLint and Prettier checks when committing changes.
